@@ -41,7 +41,10 @@ class _LandingScreenState extends State<LandingScreen> {
           ],
         ),
         bottomNavigationBar: const BottomAppBar(
-          child: BottomButton(),
+          child: BottomButton(
+            screenNumber: 1,
+            buttonText: LANDING_BUTTON,
+          ),
         ));
   }
 }

@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:openai_codex_flutter_tutorial/constants.dart';
+import 'package:openai_codex_flutter_tutorial/screens/landingScreen.dart';
+import 'package:openai_codex_flutter_tutorial/screens/playgroundScreen.dart';
 
 class BottomButton extends StatefulWidget {
-  const BottomButton({super.key});
+  final String buttonText;
+  final int screenNumber;
+  const BottomButton(
+      {Key? key, required this.buttonText, required this.screenNumber})
+      : super(key: key);
 
   @override
   State<BottomButton> createState() => _BottomButtonState();
@@ -14,10 +20,18 @@ class _BottomButtonState extends State<BottomButton> {
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: ElevatedButton.icon(
-        onPressed: () {},
-        label: const Text(
-          LANDING_BUTTON,
-          style: TextStyle(fontSize: 18),
+        onPressed: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => (widget.screenNumber == 1)
+                    ? const PlaygroundScreen()
+                    : const LandingScreen(),
+              ));
+        },
+        label: Text(
+          widget.buttonText,
+          style: const TextStyle(fontSize: 18),
         ),
         icon: const Icon(
           Icons.arrow_right_rounded,
