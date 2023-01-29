@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:openai_codex_flutter_tutorial/constants.dart';
+import 'package:openai_codex_flutter_tutorial/screens/completionScreen.dart';
 import 'package:openai_codex_flutter_tutorial/screens/landingScreen.dart';
 import 'package:openai_codex_flutter_tutorial/screens/playgroundScreen.dart';
 
@@ -26,7 +27,9 @@ class _BottomButtonState extends State<BottomButton> {
               MaterialPageRoute(
                 builder: (context) => (widget.screenNumber == 1)
                     ? const PlaygroundScreen()
-                    : const LandingScreen(),
+                    : (widget.screenNumber == 2)
+                        ? const CompletionScreen()
+                        : const LandingScreen(),
               ));
         },
         label: Text(
