@@ -10,7 +10,7 @@ const String DUMMY_PROMPT =
 const String DUMMY_COMPLETION = "Text(" " ' Hello World ' " ")";
 const String PLAYGROUND_BUTTON = "View Completions";
 const String COMPLETION_TITLE = "View Completions";
-List DUMMY_LIST = [
+List<String> DUMMY_LIST = [
   "Text(" " ' Hello World ' " ")",
   "Text(" " ' This is an App Overview ' " ")",
   "Text(" " ' We are finally here ' " ")"

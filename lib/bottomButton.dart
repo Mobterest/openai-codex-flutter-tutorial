@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:openai_codex_flutter_tutorial/constants.dart';
 import 'package:openai_codex_flutter_tutorial/screens/completionScreen.dart';
+import 'package:openai_codex_flutter_tutorial/screens/designScreen.dart';
 import 'package:openai_codex_flutter_tutorial/screens/landingScreen.dart';
 import 'package:openai_codex_flutter_tutorial/screens/playgroundScreen.dart';
 
@@ -29,7 +30,9 @@ class _BottomButtonState extends State<BottomButton> {
                     ? const PlaygroundScreen()
                     : (widget.screenNumber == 2)
                         ? const CompletionScreen()
-                        : const LandingScreen(),
+                        : (widget.screenNumber == 3)
+                            ? const DesignEvalScreen()
+                            : const LandingScreen(),
               ));
         },
         label: Text(
