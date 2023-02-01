@@ -11,7 +11,7 @@
 <a href="https://dribbble.com/mobterest" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg" alt="mobterest" height="30" width="40" /></a>
 <a href="https://www.behance.net/mobterest" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg" alt="mobterest" height="30" width="40" /></a>
 <a href="https://medium.com/@mobterest" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@mobterest" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/@mobtereststudio" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="@mobtereststudio" height="30" width="40" /></a>
+<a href="https://www.youtube.com/@mobtereststudio" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="@mobtereststudio" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
