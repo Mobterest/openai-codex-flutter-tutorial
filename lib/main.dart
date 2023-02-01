@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:openai_codex_flutter_tutorial/openaiProvider.dart';
 import 'package:openai_codex_flutter_tutorial/screens/landingScreen.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (context) => OpenAIProvider(),
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {

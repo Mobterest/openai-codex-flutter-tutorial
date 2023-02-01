@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:openai_codex_flutter_tutorial/api.dart';
 import 'package:openai_codex_flutter_tutorial/bottomButton.dart';
 import 'package:openai_codex_flutter_tutorial/constants.dart';
+import 'package:openai_codex_flutter_tutorial/openaiProvider.dart';
+import 'package:provider/provider.dart';
 
 class PlaygroundScreen extends StatefulWidget {
   const PlaygroundScreen({super.key});
@@ -20,6 +22,8 @@ class _PlaygroundScreenState extends State<PlaygroundScreen> {
   List<String> widgets = ["Text"];
   @override
   Widget build(BuildContext context) {
+    var completions = context.watch<OpenAIProvider>();
+
     return Scaffold(
       appBar: AppBar(title: const Text(APP_TITLE)),
       body: SingleChildScrollView(
@@ -87,6 +91,8 @@ class _PlaygroundScreenState extends State<PlaygroundScreen> {
                           "prompt": _promptController.text,
                           "widget": dropdownValue
                         });
+
+                    completions.addToHistory(response['data']);
 
                     setState(() {
                       _completion = response['data'];
